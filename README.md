@@ -1,3 +1,3 @@
 # UniSenacDesWeb
-### Semestre 1: * Desenvolvimento de interfaces web
+### Semestre 1: Desenvolvimento de interfaces web
 
