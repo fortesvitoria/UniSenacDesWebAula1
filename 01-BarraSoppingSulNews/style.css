@@ -1,0 +1,8 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imagem-texto {
+    max-width: 20%;
+    max-height: 200px;
+}
