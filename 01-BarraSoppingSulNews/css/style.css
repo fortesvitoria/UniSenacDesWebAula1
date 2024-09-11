@@ -1,29 +1,67 @@
-
 /* CSS GERAL */
 /* importa fonte google */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 /* variaveis */
 :root {
---fonte-titulo:'Playfair Display', serif;
---fonte-corpo:'Roboto', sans-serif;
+    --preto: #2B2C30;
+    --amarelo-escuro: #D09566;
+    --vermelho: #CB492B;
+    --cinza-escuro: #363535;
+    --azul-claro: #A4BFC1;
+    --branco: #F9F9F9;
+    --gradiente: linear-gradient(to bottom, #2B2C30, #F9F9F9);
+
+    --fonte-titulo: 'Playfair Display', serif;
+    --fonte-corpo: 'Roboto', sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--fonte-titulo);
+    margin: 0;
+    padding: 1em;
+    text-align: center;
 }
 
 body {
+    color: var(--branco);
     font-family: var(--fonte-corpo);
-
+    margin: 0;
+    align-items: center;
+    background-color: var(--cinza-escuro);
 }
 
+header {
+    background-color: var(--preto);
+    color: var(--branco);
+    margin: 0;
+}
+
+footer {
+    background-color: var(--preto);
+    padding: 2em;
+    text-align: center;
+}
+
+/* links */
+a {
+    text-decoration: none;
+    color: var(--branco);
+}
+a:hover {
+    color: var(--azul-claro);
+}
 /* tabelas */
 th,
 td {
     padding: 5px;
     text-align: left;
-    border: solid 1px;    
+    border: solid 1px;
 }
 
 /* CSS PAGINA 1 */
@@ -31,4 +69,22 @@ td {
 .imagem-texto {
     max-width: 20%;
     max-height: 200px;
+}
+
+.materia {
+    /* align-items: center; */
+}
+
+.div-imagem-texto,
+.titulo-materia {
+    text-align: center;
+}
+
+.imagem-texto {
+   padding: 0 1em 2em 1em; 
+}
+
+.corpo-texto {
+    text-align: justify;
+    padding: 2em;
 }
