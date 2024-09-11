@@ -1,0 +1,34 @@
+
+/* CSS GERAL */
+/* importa fonte google */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* variaveis */
+:root {
+--fonte-titulo:'Playfair Display', serif;
+--fonte-corpo:'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--fonte-titulo);
+}
+
+body {
+    font-family: var(--fonte-corpo);
+
+}
+
+/* tabelas */
+th,
+td {
+    padding: 5px;
+    text-align: left;
+    border: solid 1px;    
+}
+
+/* CSS PAGINA 1 */
+/* imagem pagina1 */
+.imagem-texto {
+    max-width: 20%;
+    max-height: 200px;
+}
