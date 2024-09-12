@@ -5,28 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barra Shopping Sul News!</title>
-        <!-- importa css -->
-        <link rel="stylesheet" href="css/style.css">
+    <!-- importa css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <h1>Barra Shopping Sul News!</h1>
     </header>
-    <hr>
-
-    <body>
+    <main>
         <div class="titulo-materia">
             <h2>Líder da gang caramelo é preso Vitória - ES</h2>
-            <a href="pagina1.html">Primeira notícia</a>
-            <a href="https://www.senacrs.com.br">Senac RS</a>
-            <a href="#presos">Membros Apreendidos</a>
-            <a href="#aumento">Aumento das Gangues</a>
-            <a href="#simbolos">Alerta aos Símbolos</a>
+            <a class="link-btn" href="pagina1.html">Primeira notícia</a>
+            <a class="link-btn" href="pagina3.html">Próxima notícia</a>
+            <a class="link-btn" href="#presos">Membros Apreendidos</a>
+            <a class="link-btn" href="#aumento">Aumento das Gangues</a>
+            <a class="link-btn" href="#simbolos">Alerta aos Símbolos</a>
         </div>
         <div class="corpo-texto">
-            <!-- imagem e texto principal -->
-            <img src="img/pug.jpg" alt="pug na frente de um laptop" class="imagem-texto">
+            <div class="div-imagem-texto" id="div-img">
+                <!-- imagem e texto principal -->
+                <img src="img/pug.jpg" alt="pug na frente de um laptop" class="imagem-texto">
+            </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis placeat dicta mollitia! Ex excepturi,
                 suscipit laborum dicta magni doloribus blanditiis corporis quo quidem saepe sint in eveniet odio quis
                 aperiam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo mollitia modi dolore ducimus quos
@@ -48,14 +48,16 @@
                 sed non possimus ab quis quod ut eius, repellat mollitia eaque corporis? Nesciunt, rem incidunt!
                 Mollitia,
                 blanditiis illum. Culpa est cupiditate magni maiores! Eos, totam praesentium.</p>
-            <h4>Nomes dos apreendidos:</h4>
 
-            <!-- Define aonde inicia e termina uma lista não ordenada -->
-            <ul>
-                <li>Kleber Quebra Galho</li>
-                <li>Adicional Noturno</li>
-                <li>Jorge Mata Cobra</li>
-            </ul>
+            <div class="div-tabela">
+                <h4>Nomes dos apreendidos:</h4>
+                <!-- Define aonde inicia e termina uma lista não ordenada -->
+                <ul>
+                    <li>Kleber Quebra Galho</li>
+                    <li>Adicional Noturno</li>
+                    <li>Jorge Mata Cobra</li>
+                </ul>
+            </div>
 
             <h3 id="aumento">Aumento de gang de cães em vários estados</h3>
             <p>
@@ -67,13 +69,15 @@
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
 
-            <h4>As três maiores gangues do país</h4>
-            <!-- Define aonde inicia e termina uma lista ordenada -->
-            <ol>
-                <li>Gangue do Caramelo - ES</li>
-                <li>Pata na Cara - RS</li>
-                <li>Primeiro Comando Canil - SC</li>
-            </ol>
+            <div class="div-tabela">
+                <h4>As três maiores gangues do país</h4>
+                <!-- Define aonde inicia e termina uma lista ordenada -->
+                <ol>
+                    <li>Gangue do Caramelo - ES</li>
+                    <li>Pata na Cara - RS</li>
+                    <li>Primeiro Comando Canil - SC</li>
+                </ol>
+            </div>
 
             <h3 id="simbolos">Fique atento aos símbolos das gangues</h3>
             <p>
@@ -85,20 +89,24 @@
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
 
-            <h4>Significado por trás das coleiras</h4>
-
-            <dl>
-                <dt>Osso</dt>
-                <dd>Derrubou chimarrão do dono</dd>
-                <dd>Mordeu mais que 3 carteiros</dd>
-                <dt>Coração</dt>
-                <dd>Corre atrás de motoboy</dd>
-                <dd>Morde o próprio rabo</dd>
-            </dl>
+            <div class="div-tabela">
+                <h4>Significado por trás das coleiras</h4>
+                <dl>
+                    <dt>Osso</dt>
+                    <dd>Derrubou chimarrão do dono</dd>
+                    <dd>Mordeu mais que 3 carteiros</dd>
+                    <dt>Coração</dt>
+                    <dd>Corre atrás de motoboy</dd>
+                    <dd>Morde o próprio rabo</dd>
+                </dl>
+            </div>
         </div>
 
-        <a href="#">Voltar ao topo</a>
-    </body>
+        </div>
+    </main>
+    <footer>
+        <a href="#" class="link-btn">Voltar ao topo</a>
+    </footer>
 </body>
 
 </html>

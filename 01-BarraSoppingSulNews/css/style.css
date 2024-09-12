@@ -6,9 +6,11 @@
 :root {
     --preto: #2B2C30;
     --amarelo-escuro: #D09566;
+    --laranja-claro: #eba165;
     --vermelho: #CB492B;
     --cinza-escuro: #363535;
-    --azul-claro: #A4BFC1;
+    --azul-medio: #3e5a75;
+    --azul-claro: #4679a8;
     --branco: #F9F9F9;
     --gradiente: linear-gradient(to bottom, #2B2C30, #F9F9F9);
 
@@ -53,9 +55,26 @@ a {
     text-decoration: none;
     color: var(--branco);
 }
-a:hover {
-    color: var(--azul-claro);
+
+/* botoes */
+.link-btn {
+    background-color: var(--amarelo-escuro);
+    border-radius: 100px;
+    padding: 10px;
+    margin: 10px;
 }
+.link-btn:hover {
+    background-color: var(--laranja-claro);
+}
+
+footer .link-btn {
+background-color: var(--azul-medio);
+}
+
+footer .link-btn:hover {
+    background-color: var(--azul-claro);
+    }
+
 /* tabelas */
 th,
 td {
@@ -64,15 +83,14 @@ td {
     border: solid 1px;
 }
 
+dd, dt, li {
+    padding: 5px;
+}
+
 /* CSS PAGINA 1 */
-/* imagem pagina1 */
 .imagem-texto {
     max-width: 20%;
     max-height: 200px;
-}
-
-.materia {
-    /* align-items: center; */
 }
 
 .div-imagem-texto,
@@ -87,4 +105,10 @@ td {
 .corpo-texto {
     text-align: justify;
     padding: 2em;
+}
+
+/* CSS PAGINA 2 */
+.div-tabela {
+    margin: 0 auto; 
+    max-width: 50%;
 }
