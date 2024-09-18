@@ -114,9 +114,6 @@ dd, dt, li {
 }
 
 /* CSS PAGINA 3 */
-.tabela {
+.tabela table {
     margin: 0 auto; 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
