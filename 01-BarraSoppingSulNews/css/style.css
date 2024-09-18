@@ -112,3 +112,11 @@ dd, dt, li {
     margin: 0 auto; 
     max-width: 50%;
 }
+
+/* CSS PAGINA 3 */
+.tabela {
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
