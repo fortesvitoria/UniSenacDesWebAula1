@@ -87,6 +87,26 @@ dd, dt, li {
     padding: 5px;
 }
 
+/* formulario */
+form {
+    padding: 5em;
+    text-align: center;
+}
+.form-label {
+    display: none;
+}
+
+.form-input {
+    margin: 1em;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+input{
+    border: none;
+}
+
+
 /* CSS PAGINA 1 */
 .imagem-texto {
     max-width: 20%;
@@ -117,3 +137,4 @@ dd, dt, li {
 .tabela table {
     margin: 0 auto; 
 }
+

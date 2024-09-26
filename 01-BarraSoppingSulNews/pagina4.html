@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra Shopping Sul News - Formulário</title>
+    <!-- importa css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Barra Shopping Sul News!</h1>
+    </header>
+    <main>
+        <div class="materia">
+            <div class="titulo-materia">
+                <h2>Formulário</h2>
+                <a class="link-btn" href="#div-img">Fotos sobre o texto</a>
+                <a class="link-btn" href="pagina2.html">Líder preso</a>
+                <a class="link-btn" href="pagina3.html">Cripto Petiscos</a>
+            </div>
+
+            <div class="formulario">
+
+                <!-- Elemento de separação visual para agrupar campos de formulário -->
+                <fieldset>
+                    <!-- Define uma legenda/título para o fieldset -->
+                    <legend>Dados de Login</legend>
+                    <!-- Define a área de um formulário -->
+                    <form name="form-basico" action="cadastrar.html" method="GET">
+                        <!-- Define um rótulo de um campo de formulário -->
+                        <label for="nome" class="form-label">Nome completo:</label>
+                        <!-- Insere um campo de formulário-->
+                        <input type="text" name="nome" placeholder="Nome" id="nome" class="form-input" required>
+                        <label for="senha" class="form-label">Senha:</label>
+                        <input type="password" name="nome" placeholder="Senha" id="senha" class="form-input" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Dados do pedido:</legend>
+                    <span>Selecione o sabor da borda:</span>
+                    <!-- Estrutura de seleção para escolha de uma única opção -->
+                    <input type="radio" name="borda" value="sem-borda" id="sem-borda">
+                    <label for="sem-borda">Sem borda</label>
+                    <input type="radio" name="borda" value="catupiry" id="catupiry">
+                    <label for="catupiry">Catupiry</label>
+                    <input type="radio" name="borda" value="chocolate" id="chocolate" checked>
+                    <label for="chocolate">Chocolate</label>
+                    <br>
+                    <!-- Estrutura de seleção para escolha de múltiplas opções -->
+                    <span>Selecione os sabores da pizza:</span>
+                    <input type="checkbox" name="peperoni" value="selecionado" id="peperoni">
+                    <label for="peperoni">Peperoni</label>
+                    <input type="checkbox" name="4-quejos" value="selecionado" id="4-quejos">
+                    <label for="4-quejos">Quatro Quejos</label>
+                    <input type="checkbox" name="abobrinha" value="selecionado" id="abobrinha">
+                    <label for="abobrinha">Abobrinha</label>
+                    <br>
+                    <!-- Estrutura de seleção para escolher o tamanho da pizza -->
+                    <span>Selecione o tamanho da pizza:</span>
+                    <select name="tamanho" id="">
+                        <option selected disable>Tamanho</option>
+                        <option value="p">Pequena</option>
+                        <option value="m">Média</option>
+                        <option value="g">Grande</option>
+                        <option value="f">familia</option>
+                    </select>
+                    <br>
+                    <!-- Estrutura de seleção para escolher a bebida -->
+                    <span>Selecione a sua bebida:</span>
+                    <select name="bebida" id="">
+                        <option selected disable>Bebida</option>
+                        <optgroup label="Água">
+                            <option value="aguua-gas">Agua com gás</option>
+                            <option value="agua">Água sem gás</option>
+                        </optgroup>
+                        <optgroup label="Refrigerantes">
+                            <option value="fruki">Fruki</option>
+                            <option value="coca">Coca-cola</option>
+                            <option value="fanta">Fanta</option>
+                        </optgroup>
+                        <optgroup value="Sucos">
+                            <option value="laranja">Suco de laranja</option>
+                            <option value="limão">Suco de limão</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <span>Observações:</span>
+                    <br>
+                    <textarea name="obs" id="" cols="30" rows="10" placeholder="Digite suas observações"></textarea>
+                </fieldset>
+                <input type="submit" name="btn" value="Enviar formulário">
+                </form>
+
+
+
+            </div>
+
+    </main>
+    <footer>
+        <a href="#" class="link-btn">Voltar ao topo</a>
+    </footer>
+</body>
+</body>
+
+</html>
