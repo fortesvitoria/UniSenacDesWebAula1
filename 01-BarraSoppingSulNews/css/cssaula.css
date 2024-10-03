@@ -1,0 +1,77 @@
+/* CSS GERAL
+/* importa fonte google */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* variaveis */
+:root {
+    --preto: #272727;
+    --amarelo-escuro: #D09566;
+    --laranja-claro: #eba165;
+    --vermelho: #CB492B;
+    --cinza-escuro: #363535;
+    --azul-medio: #3e5a75;
+    --azul-claro: #4679a8;
+    --branco: #F9F9F9;
+    --gradiente: linear-gradient(to bottom, #2B2C30, #F9F9F9);
+
+    --fonte-titulo: 'Playfair Display', serif;
+    --fonte-corpo: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--fonte-titulo);
+    text-align: center;
+}
+
+body {
+    color: var(--branco);
+    font-family: var(--fonte-corpo);
+    background-color: var(--cinza-escuro);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+header {
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+
+/* CSS PAGINA 4 - formulários - exercicio em aula */
+
+input,
+span {
+    /* o elemento reserva a linha toda para ele */
+    display: block;
+}
+
+
+.especial {
+    /* se houver espaço ao lado do elemento, o elemento ao lado irá ocupar */
+    display: inline-block;
+}
+
+.esquerda,
+.direita {
+    display: inline-block;
+    height: 580px;
+    width: 45%;
+
+}
+
+.esquerda {
+    float: left;
+}
+
+.direita {
+    float: right;
+}

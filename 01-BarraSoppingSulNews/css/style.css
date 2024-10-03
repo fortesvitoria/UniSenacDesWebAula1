@@ -1,4 +1,4 @@
-/* CSS GERAL */
+/* CSS GERAL
 /* importa fonte google */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
@@ -42,6 +42,10 @@ header {
     background-color: var(--preto);
     color: var(--branco);
     margin: 0;
+}
+
+.titulo-materia {
+    padding: 1em 0 2em 0;
 }
 
 footer {
@@ -88,8 +92,11 @@ dd, dt, li {
 }
 
 /* formulario */
+
+fieldset{
+    padding: 2em;
+}
 form {
-    padding: 5em;
     text-align: center;
 }
 .form-label {
@@ -138,3 +145,10 @@ input{
     margin: 0 auto; 
 }
 
+/* CSS PAGINA 4 - */
+.esquerda {
+}
+
+.direita {
+
+}

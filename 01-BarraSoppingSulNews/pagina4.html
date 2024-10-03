@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barra Shopping Sul News - Formulário</title>
     <!-- importa css -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/cssaula.css">
 </head>
 
 <body>
@@ -23,74 +24,120 @@
             </div>
 
             <div class="formulario">
-
                 <!-- Elemento de separação visual para agrupar campos de formulário -->
-                <fieldset>
-                    <!-- Define uma legenda/título para o fieldset -->
-                    <legend>Dados de Login</legend>
-                    <!-- Define a área de um formulário -->
-                    <form name="form-basico" action="cadastrar.html" method="GET">
+
+                <!-- Define uma legenda/título para o fieldset -->
+                <legend>Dados de Login</legend>
+                <!-- Define a área de um formulário -->
+                <form class="esquerda" name="form-basico" action="cadastrar.html" method="GET">
+                    <fieldset>
                         <!-- Define um rótulo de um campo de formulário -->
                         <label for="nome" class="form-label">Nome completo:</label>
                         <!-- Insere um campo de formulário-->
-                        <input type="text" name="nome" placeholder="Nome" id="nome" class="form-input" required>
+                        <input type="text" name="nome" placeholder="Nome" id="nome" class="form-input" required
+                            autofocus>
                         <label for="senha" class="form-label">Senha:</label>
                         <input type="password" name="nome" placeholder="Senha" id="senha" class="form-input" required>
-                </fieldset>
-                <fieldset>
-                    <legend>Dados do pedido:</legend>
-                    <span>Selecione o sabor da borda:</span>
-                    <!-- Estrutura de seleção para escolha de uma única opção -->
-                    <input type="radio" name="borda" value="sem-borda" id="sem-borda">
-                    <label for="sem-borda">Sem borda</label>
-                    <input type="radio" name="borda" value="catupiry" id="catupiry">
-                    <label for="catupiry">Catupiry</label>
-                    <input type="radio" name="borda" value="chocolate" id="chocolate" checked>
-                    <label for="chocolate">Chocolate</label>
-                    <br>
-                    <!-- Estrutura de seleção para escolha de múltiplas opções -->
-                    <span>Selecione os sabores da pizza:</span>
-                    <input type="checkbox" name="peperoni" value="selecionado" id="peperoni">
-                    <label for="peperoni">Peperoni</label>
-                    <input type="checkbox" name="4-quejos" value="selecionado" id="4-quejos">
-                    <label for="4-quejos">Quatro Quejos</label>
-                    <input type="checkbox" name="abobrinha" value="selecionado" id="abobrinha">
-                    <label for="abobrinha">Abobrinha</label>
-                    <br>
-                    <!-- Estrutura de seleção para escolher o tamanho da pizza -->
-                    <span>Selecione o tamanho da pizza:</span>
-                    <select name="tamanho" id="">
-                        <option selected disable>Tamanho</option>
-                        <option value="p">Pequena</option>
-                        <option value="m">Média</option>
-                        <option value="g">Grande</option>
-                        <option value="f">familia</option>
-                    </select>
-                    <br>
-                    <!-- Estrutura de seleção para escolher a bebida -->
-                    <span>Selecione a sua bebida:</span>
-                    <select name="bebida" id="">
-                        <option selected disable>Bebida</option>
-                        <optgroup label="Água">
-                            <option value="aguua-gas">Agua com gás</option>
-                            <option value="agua">Água sem gás</option>
-                        </optgroup>
-                        <optgroup label="Refrigerantes">
-                            <option value="fruki">Fruki</option>
-                            <option value="coca">Coca-cola</option>
-                            <option value="fanta">Fanta</option>
-                        </optgroup>
-                        <optgroup value="Sucos">
-                            <option value="laranja">Suco de laranja</option>
-                            <option value="limão">Suco de limão</option>
-                        </optgroup>
-                    </select>
-                    <br>
-                    <span>Observações:</span>
-                    <br>
-                    <textarea name="obs" id="" cols="30" rows="10" placeholder="Digite suas observações"></textarea>
-                </fieldset>
-                <input type="submit" name="btn" value="Enviar formulário">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Dados do pedido:</legend>
+                        <span>Selecione o sabor da borda:</span>
+                        <!-- Estrutura de seleção para escolha de uma única opção -->
+                        <input class="especial" type="radio" name="borda" value="sem-borda" id="sem-borda">
+                        <label for="sem-borda">Sem borda</label>
+                        <input  class="especial"type="radio" name="borda" value="catupiry" id="catupiry">
+                        <label for="catupiry">Catupiry</label>
+                        <input  class="especial"type="radio" name="borda" value="chocolate" id="chocolate" checked>
+                        <label for="chocolate">Chocolate</label>
+                        <!-- Estrutura de seleção para escolha de múltiplas opções -->
+                        <span>Selecione os sabores da pizza:</span>
+                        <input class="especial" type="checkbox" name="peperoni" value="selecionado" id="peperoni">
+                        <label for="peperoni">Peperoni</label>
+                        <input class="especial" type="checkbox" name="4-quejos" value="selecionado" id="4-quejos">
+                        <label for="4-quejos">Quatro Quejos</label>
+                        <input class="especial" type="checkbox" name="abobrinha" value="selecionado" id="abobrinha">
+                        <label for="abobrinha">Abobrinha</label>
+                        <!-- Estrutura de seleção para escolher o tamanho da pizza -->
+                        <span>Selecione o tamanho da pizza:</span>
+                        <select name="tamanho" id="">
+                            <option selected disable>Tamanho</option>
+                            <option value="p">Pequena</option>
+                            <option value="m">Média</option>
+                            <option value="g">Grande</option>
+                            <option value="f">familia</option>
+                        </select>
+                        <!-- Estrutura de seleção para escolher a bebida -->
+                        <span>Selecione a sua bebida:</span>
+                        <select name="bebida" id="">
+                            <option selected disable>Bebida</option>
+                            <optgroup label="Água">
+                                <option value="agua-gas">Agua com gás</option>
+                                <option value="agua">Água sem gás</option>
+                            </optgroup>
+                            <optgroup label="Refrigerantes">
+                                <option value="fruki">Fruki</option>
+                                <option value="coca">Coca-cola</option>
+                                <option value="fanta">Fanta</option>
+                            </optgroup>
+                            <optgroup label="Sucos">
+                                <option value="laranja">Suco de laranja</option>
+                                <option value="limão">Suco de limão</option>
+                            </optgroup>
+                        </select>
+                        <span>Observações:</span>
+                        <textarea name="obs" id="" cols="30" rows="10" placeholder="Digite suas observações"></textarea>
+                        <input type="submit" name="btn" value="Enviar formulário">
+                    </fieldset>
+                </form>
+
+                <!-- NOVO FORM -->
+                <form class="direita" name="form-avancado" action="registrar.html" method="GET">
+
+                    <fieldset>
+                        <legend>Formulário avançado</legend>
+                        <!-- Campo de formulário para email. Possui validação. -->
+                        <label for="email">Informe seu e-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="usuario@email.com">
+                        <!-- Campo de formulário para URL. Possui validação. -->
+                        <label for="site">Informe seu linkedin:</label>
+                        <input type="url" name="site" id="site" placeholder="Deve iniciar com http://">
+                        <!-- Campo de formulário para numeros. min define valor minimo e max deficne valor maximo. -->
+                        <!-- step define o intervalo de valores -->
+                        <!-- value define o valor inical -->
+                        <label for="idade">Informe sua idade:</label>
+                        <input type="number" name="idade" id="idade" min="20" max="60">
+                        <!-- Campo de formulário para. -->
+                        <label for="pontos">Avalie o atendimento:</label>
+                        <input type="range" name="pontos" id="pontos">
+                        <!-- Campo de formulário para selecionar uma cor. -->
+                        <label for="cor">Escolha uma cor:</label>
+                        <input type="color" name="cor" id="cor">
+                        <!-- Campo de formulário para telefone. -->
+                        <label for="telefone">Digite seu telefone:</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="+55 (51) 0000-0000">
+                        <!-- Campo de formulário para data. -->
+                        <label for="data">Data de nascimento:</label>
+                        <input type="date" name="data" id="data" max="2005-01-01" min="1950-01-01">
+                        <!-- Campo de formulário para horario. -->
+                        <label for="horario">Horario de nascimento:</label>
+                        <input type="time" name="horario" id="horario" required>
+                        <!-- Campo de formulário para horario. -->
+                        <input list="seriado" name="seriado">
+                        <datalist id="seriado">
+                            <option value="The walking dead"></option>
+                            <option value="The office"></option>
+                            <option value="Breaking Bad"></option>
+                            <option value="Doctor Who"></option>
+                            <option value="O irmão do Jorel"></option>
+                            <option value="Ricky and Morty"></option>
+                        </datalist>
+
+                        <input type="submit" name="btn-enviar">
+
+
+
+                    </fieldset>
+
                 </form>
 
 
