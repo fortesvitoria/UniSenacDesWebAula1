@@ -1,0 +1,24 @@
+body {
+    /* margin: 0; */
+    background-color: black;
+}
+
+.div-principal {
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 450px;
+}
+
+li {
+    display: inline-block;
+}
+
+figure {
+    margin: 0;
+}
